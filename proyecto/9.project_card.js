@@ -14,7 +14,7 @@ function crearCards() {
     for (let i = 0; i < numeroCards; i++) {
      const card = document.createElement('div');    
      card.className = 'card';
-     card.innerHTML = `<h2>Card</h2>`
+     card.innerHTML = `<h2>Juanito</h2> <p>Cali</p>`
      cardsContainer.appendChild(card)
         
     }
