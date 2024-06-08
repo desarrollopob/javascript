@@ -1,7 +1,10 @@
 
 function crearCards() {
     const numeroCards = document.getElementById('cardCount').value;
-    const cardsContainer = document.getElementById('cardsContainer')
+    const cardsContainer = document.getElementById('cardsContainer');
+    const namePerson = document.getElementById('name').value;
+    const nameCity = document.getElementById('nameCity').value;
+
     //SOLUCIÓN 1
     cardsContainer.innerHTML = '';
 
@@ -14,7 +17,7 @@ function crearCards() {
     for (let i = 0; i < numeroCards; i++) {
      const card = document.createElement('div');    
      card.className = 'card';
-     card.innerHTML = `<h2>Juanito</h2> <p>Cali</p>`
+     card.innerHTML = `<h2>${namePerson}</h2> <p>${nameCity}</p>`
      cardsContainer.appendChild(card)
         
     }
