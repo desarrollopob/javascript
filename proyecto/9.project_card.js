@@ -15,7 +15,7 @@ function crearCards() {
     }
  */
 //CONDCIONAL PARA EVALUAR SI LA PALABRA ESCRITA ES CUCUTA Ó SI EL NÚMERO DE CARDS ES MAYOR A 10
-    if(nameCity==='cucuta' || numeroCards > 10 || namePerson.length > 20  ){
+    if(nameCity==='cucuta' || numeroCards > 10 || namePerson.length > 20 || numeroCards < 3 ){
         alert('Hay un error en tu formulario')
     }else{
 //Si la palabra escrita es diferente a cucuta y el número de cards es menor a 10 se imprimen las cards:
