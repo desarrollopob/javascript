@@ -14,12 +14,18 @@ function crearCards() {
         cardsContainer.removeChild(cardsContainer.firstChild)
     }
  */
-    for (let i = 0; i < numeroCards; i++) {
-     const card = document.createElement('div');    
-     card.className = 'card';
-     card.innerHTML = `<h2>${namePerson}</h2> <p>${nameCity}</p>`
-     cardsContainer.appendChild(card)
-        
+
+    if(nameCity==='cucuta' ){
+        alert('Esta ciudad no está permitida')
+    }else{
+        for (let i = 0; i < numeroCards; i++) {
+            const card = document.createElement('div');    
+            card.className = 'card';
+            card.innerHTML = `<h2>${namePerson}</h2> <p>${nameCity}</p>`
+            cardsContainer.appendChild(card)
+               
+           }
     }
+   
  
 }
