@@ -1,20 +1,22 @@
 const button = document.getElementById('getHoroscope');
 const zodiacInput = document.getElementById('zodiacSign');
 const horoscopeResult = document.getElementById('horoscopeResult');
+const yearsold = document.getElementById('yearsold');
 
-
-button.addEventListener('click', function test() {
-    console.log('holaaaaa soy el botón');
-});
-
-/*button.addEventListener('click', function() {
+button.addEventListener('click', function() {
     const zodiacSign = zodiacInput.value.toLowerCase();
     let horoscopeMessage;
+
     
     switch (zodiacSign) {
         case 'aries':
-            horoscopeMessage = "Hoy es un buen día para tomar decisiones importantes.";
-            break;
+            if (yearsold.value < 18) {
+                alert("Eres menor de edad y tu signo es Aries.");
+                horoscopeMessage = ''; 
+            } else {
+                horoscopeMessage = "Hoy es un buen día para tomar decisiones importantes.";
+            }
+            break;           
         case 'tauro':
             horoscopeMessage = "Te espera una sorpresa agradable.";
             break;
@@ -54,5 +56,10 @@ button.addEventListener('click', function test() {
             horoscopeMessage = "Por favor, introduce un signo zodiacal válido.";
     }
     
-    horoscopeResult.textContent = horoscopeMessage;
-});*/
+    // Solo mostrar el mensaje si está definido
+    if (horoscopeMessage) {
+        horoscopeResult.textContent = horoscopeMessage;
+    } else {
+        horoscopeResult.textContent = '';
+    }
+});
