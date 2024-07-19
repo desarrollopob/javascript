@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+.menu {
+    display: flex;
+    justify-content:flex-end;
+    background-color: cadetblue;
+    height: 50%;
+    padding-right: 10%;
+  
+    ul{
+    width: 40%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+}
+
+.principal_img{
+    img{
+        width: 100%;
+        height: 30rem;
+    }
+}
+.services{
+   display: flex;
+   justify-content: center;
+}
