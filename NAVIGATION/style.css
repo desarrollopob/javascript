@@ -23,6 +23,34 @@ body{
     }
 }
 .services{
-   display: flex;
-   justify-content: center;
-}
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10%;
+    text-align: center;
+ }
+ 
+ .containers{
+     display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10%;
+    text-align: center;
+ }
+ .contenedor{
+     text-align: center;
+     background-color: #a04343;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     width: 400px;
+     height: 400px;
+ }
+ .contenedor, h1{
+    font-style: bold;
+ }
+ 
+ .tarjeta{
+     height: 200px;
+     width: 300px;
+ }
