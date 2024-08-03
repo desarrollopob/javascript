@@ -39,6 +39,7 @@ body{
 .container{
     width: 50%;
 }
+
 /*ESTILOS FORMULARIO*/
 form {
     display: flex;
